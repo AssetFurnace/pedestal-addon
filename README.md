@@ -18,7 +18,7 @@ In AssetFurnace:
 Or, to test an unreviewed copy from a specific commit:
 
 ```bash
-./lab addon add --unreviewed https://github.com/Bingeljell/pedestal-addon.git@<commit-hash>
+./lab addon add --unreviewed https://github.com/AssetFurnace/pedestal-addon.git@<commit-hash>
 ```
 
 ## Use
