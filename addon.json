@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pedestal",
+  "name": "Pedestal",
+  "version": "0.1.0",
+  "author": {
+    "name": "AssetFurnace",
+    "url": "https://github.com/Bingeljell"
+  },
+  "licence": "Apache-2.0",
+  "summary": "A round display stand with height, width and step count.",
+  "needs": {
+    "assetfurnace": ">=0.6.0",
+    "blender": ">=4.2"
+  },
+  "setup": ["python", "-c", "print('pedestal add-on ready')"],
+  "models": [],
+  "tools": [
+    {
+      "id": "build",
+      "label": "Build pedestal",
+      "hint": "A round stepped stand for showing off a model.",
+      "inputs": [
+        {
+          "id": "height",
+          "type": "number",
+          "label": "Height (m)",
+          "min": 0.1,
+          "max": 2.0
+        },
+        {
+          "id": "width",
+          "type": "number",
+          "label": "Width (m)",
+          "min": 0.1,
+          "max": 2.0
+        },
+        {
+          "id": "steps",
+          "type": "number",
+          "label": "Steps",
+          "min": 1,
+          "max": 10
+        }
+      ],
+      "run": ["{blender}", "-b", "-P", "pedestal.py", "--", "{out}", "--height", "{height}", "--width", "{width}", "--steps", "{steps}"],
+      "makes": "glb"
+    }
+  ]
+}
