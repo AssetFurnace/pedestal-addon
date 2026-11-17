@@ -38,8 +38,10 @@ def clear_scene() -> None:
 
     bpy.ops.object.select_all(action="SELECT")
     bpy.ops.object.delete(use_global=False)
-    for block in list(bpy.data.meshes) + list(bpy.data.materials):
-        bpy.data.block_remove(block)
+    for mesh in list(bpy.data.meshes):
+        bpy.data.meshes.remove(mesh)
+    for material in list(bpy.data.materials):
+        bpy.data.materials.remove(material)
 
 
 def build_pedestal(height: float, width: float, steps: int):
