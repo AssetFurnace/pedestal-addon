@@ -15,10 +15,10 @@ In AssetFurnace:
 ./lab addon add pedestal
 ```
 
-Or, to test an unreviewed copy from a specific commit:
+Or, to test a copy that is not on the list yet, from a specific commit:
 
 ```bash
-./lab addon add --unreviewed https://github.com/AssetFurnace/pedestal-addon.git@<commit-hash>
+./lab addon add --unlisted https://github.com/AssetFurnace/pedestal-addon.git@<commit-hash>
 ```
 
 ## Use
