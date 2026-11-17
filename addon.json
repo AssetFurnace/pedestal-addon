@@ -13,7 +13,7 @@
     "assetfurnace": ">=0.6.0",
     "blender": ">=4.2"
   },
-  "setup": ["python", "-c", "print('pedestal add-on ready')"],
+  "setup": ["python3", "-c", "print('pedestal add-on ready')"],
   "models": [],
   "tools": [
     {
