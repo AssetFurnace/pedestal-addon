@@ -29,6 +29,10 @@ From the studio Add-ons page, or from the CLI:
 ./lab addon run pedestal build --input height=0.6 --input width=0.4 --input steps=3 --yes
 ```
 
+## Learn from it
+
+Pedestal is the smallest add-on we could write. To build your own, see the guide: https://assetfurnace.com/blog/build-an-add-on
+
 ## Licence
 
 Apache-2.0
